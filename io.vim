@@ -19,6 +19,11 @@ function Fwriteput()
     echo 'wrote!'
 endfunction
 
+function Fpurge()
+    call delete('init.vim')
+    call delete('cb')
+endfunction
+
 function Fappend(text)
     call append(0, a:text)
 endfunction
