@@ -2,21 +2,20 @@
 " 202209222340
 
 
-"
 " Save with 'kk' or 'KK'.
 imap kk <Esc>:w<CR><Esc>
 imap KK <Esc>:w<CR><Esc>
-imap kput <Esc>:call Fwriteput()<CR><Esc>
-imap KPUT <Esc>:call Fwriteput()<CR><Esc>
+imap kput <Esc>:w<CR><Esc>:call Fwriteput()<CR><Esc>
+imap KPUT <Esc>:w<CR><Esc>:call Fwriteput()<CR><Esc>
+imap kbye <Esc>:w<CR><Esc>:call Fpurge()<CR><Esc>:q!<Esc>
+imap KBYE <Esc>:w<CR><Esc>:call Fpurge()<CR><Esc>:q!<Esc>
 
 
-"
 " Exit vim with 'qq' or 'QQ'.
 nmap qq <Esc>:q<CR>
 nmap QQ <Esc>:q<CR>
 
 
-"
 " Change keys 'k' and 'j' to improve Up/Down.
 nmap k <Esc>gk
 nmap j <Esc>gj
@@ -24,7 +23,6 @@ vmap k gk
 vmap j gj
 
 
-"
 " Change arrows keys Up/Down.
 nmap <Up> <Esc>gk
 nmap <Down> <Esc>gj
@@ -37,7 +35,7 @@ imap <Down> <Esc>gja
 "inoremap <Left> <NOP>
 "inoremap <Right> <NOP>
 
-"
+
 " Copy & paste in Windons System.
 "nnoremap yy "*yy
 "vnoremap y "*y
