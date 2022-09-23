@@ -17,8 +17,6 @@ set tabstop=4
 set textwidth=0
 set wildmenu
 
-colorscheme koehler
-
 
 " Metodo de encriptacao.
 set cryptmethod=blowfish2
