@@ -1,11 +1,9 @@
 " Funcoes network para vim.
 " 202209191202
-"
-
-"call Finclude("io.vim")
 
 cab kkget call FftpGet()
 cab kkput call FftpPut()
+cab kkpur call Fpurge()
 
 function Fduckduckgo(search)
     let url = 'https://lite.duckduckgo.com/lite/?q='
@@ -22,7 +20,7 @@ function FhtmlToTxt(source)
 endfunction
 
 function Fcurl(opt, url)
-    let result = system("curl " .  a:opt . " " . a:url)
+    let result = system(g:cmdcurl .  a:opt . " " . a:url)
     return result
 endfunction
 
