@@ -4,6 +4,7 @@
 cab kkget call FftpGet()
 cab kkput call FftpPut()
 cab kkpur call Fpurge()
+cab kkbye call Fpurge()<CR><Esc>:q!<CR>
 
 function Fduckduckgo(search)
     let url = 'https://lite.duckduckgo.com/lite/?q='
