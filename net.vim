@@ -4,8 +4,8 @@
 
 "call Finclude("io.vim")
 
-cab zzget call FftpGet()
-cab zzput call FftpPut()
+cab kkget call FftpGet()
+cab kkput call FftpPut()
 
 function Fduckduckgo(search)
     let url = 'https://lite.duckduckgo.com/lite/?q='
