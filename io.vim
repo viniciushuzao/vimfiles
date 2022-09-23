@@ -10,6 +10,11 @@ function Finput(text)
     return result
 endfunction
 
+function Fwriteput()
+    write
+    call FftpPut()
+    call delete('cb')
+endfunction
 
 function Fappend(text)
     call append(0, a:text)
