@@ -2,7 +2,7 @@
 " 202209191202
 "
 
-call Finclude("io.vim")
+"call Finclude("io.vim")
 
 cab zzget call FftpGet()
 cab zzput call FftpPut()
