@@ -20,7 +20,7 @@ function FhtmlToTxt(source)
 endfunction
 
 function Fcurl(opt, url)
-    let result = system(g:cmdcurl .  a:opt . " " . a:url)
+    let result = system(g:cmdcurl . " " .  a:opt . " " . a:url)
     return result
 endfunction
 
