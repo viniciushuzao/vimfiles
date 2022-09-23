@@ -4,10 +4,10 @@
 
 "
 " Save with 'kk' or 'KK'.
-"imap kk <Esc>:w<CR><Esc>
-"imap KK <Esc>:w<CR><Esc>
-imap kk <Esc>:call Fwriteput()<CR><Esc>
-imap KK <Esc>:call Fwriteput()<CR><Esc>
+imap kk <Esc>:w<CR><Esc>
+imap KK <Esc>:w<CR><Esc>
+imap kput <Esc>:call Fwriteput()<CR><Esc>
+imap KPUT <Esc>:call Fwriteput()<CR><Esc>
 
 
 "
