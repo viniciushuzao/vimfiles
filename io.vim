@@ -27,3 +27,10 @@ endfunction
 function Fappend(text)
     call append(0, a:text)
 endfunction
+
+" Copy & paste in Windons System.
+function FcopyPasteWin()
+    nnoremap yy "*yy
+    vnoremap y "*y
+    nnoremap p "*p
+endfunction
