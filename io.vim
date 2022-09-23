@@ -11,9 +11,12 @@ function Finput(text)
 endfunction
 
 function Fwriteput()
+    echo 'Saving...'
     write
+    echo 'Put server...'
     call FftpPut()
     call delete('cb')
+    echo 'wrote!'
 endfunction
 
 function Fappend(text)
