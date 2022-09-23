@@ -1,7 +1,7 @@
 " biblioteca com calculos medicos
 " 202209191117
 "
-call Finclude("io.vim")
+"call Finclude("io.vim")
 
 function FcalcImc() "nao esta funcionando
 	let peso = Finput('Peso: ')
