@@ -15,6 +15,13 @@ cab CE ce
 cab Ce ce
 cab cE ce
 
+" Start copy & past Windows mode.
+cab copypastewin call FcopyPasteWin()
+
+" Tabs.
+cab tn tabnew
+cab te tabedit
+
 
 "
 " Spellcheck com spell.
