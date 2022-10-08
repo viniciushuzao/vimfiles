@@ -42,3 +42,34 @@ function FftpGet()
     echo 'Get copybook - OK'
     tabedit cb
 endfunction
+
+
+
+
+"funcoes para enviar arquivo para ftp
+function Ffput(file)
+    echo 'Putting file...'
+    let opt = "-B -T " . a:file
+    let login = "-u " . g:ftpuser . ":" . g:ftppass
+    let url = g:ftpserver . a:file
+    let content = system(g:cmdcurl . " " . opt . " " . login . " " . url)
+    echo 'Put: ' . a:file . ' - OK!'
+endfunction
+
+function Ffget(file)
+    echo 'Getting file...'
+    let opt = "-B -o " . a:file
+    let login = "-u " . g:ftpuser . ":" . g:ftppass
+    let url = g:ftpserver . a:file
+    let content = system(g:cmdcurl . " " . opt . " " . login . " " . url)
+    echo 'Get: ' . a:file . ' - OK!'
+endfunction
+
+function Fflist()
+    echo 'Listting...'
+    let opt = "-s -B --list-only "
+    let login = "-u " . g:ftpuser . ":" . g:ftppass
+    let url = g:ftpserver
+    let content = system(g:cmdcurl . " " . opt . " " . login . " " . url)
+    echo 'List: ' . content
+endfunction
